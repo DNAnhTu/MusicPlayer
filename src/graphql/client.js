@@ -34,8 +34,7 @@ const typeDefs = gql`
 
 const client = new ApolloClient({
     link: new WebSocketLink({
-     // uri: 'wss://react-music-player-argon.herokuapp.com/v1/graphql',
-     uri: 'wss://apt-goshawk-19.hasura.app/v1/graphql',
+      uri: 'wss://react-music-player-argon.herokuapp.com/v1/graphql',
       options: {
         reconnect: true
       }

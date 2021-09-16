@@ -70,7 +70,7 @@ function AddSong(){
         const duration = player.getDuration();
         const {title, video_id, author} = player.getVideoData();
         const thumbnail = `http://img.youtube.com/vi/${video_id}/0.jpg`;
-        //const thumbnail = `https://img.youtube.com/vi/cNTaFArEObU/0.jpg`;
+       // const thumbnail = `https://img.youtube.com/vi/cNTaFArEObU/0.jpg`;
         return {
             artist: 
             author,
@@ -79,9 +79,9 @@ function AddSong(){
             title
             //title: "Pariah",
             //artist: "Steven Wilson, Ninet Tayeb",
-            //thumbnail : "https://img.youtube.com/vi/cNTaFArEObU/0.jpg",
+           // thumbnail : "https://img.youtube.com/vi/cNTaFArEObU/0.jpg",
             //url: "https://youtu.be/cNTaFArEObU",
-            //duration: 279,
+           // duration: 279,
         }
     }
 
@@ -91,11 +91,16 @@ function AddSong(){
         try{
             await addSong({
                 variables: {
-                    artist: artist.length > 0 ? artist : null,
+                   artist: artist.length > 0 ? artist : null,
                     duration: duration > 0 ? duration : null,
                     thumbnail: thumbnail.length > 0 ? thumbnail:null,
                     title: title.length > 0 ? title: null,
                     url: url.length > 0 ? url : null,
+                   //title: "Pariah",
+                  // artist: "Steven Wilson, Ninet Tayeb",
+                   //thumbnail : "https://img.youtube.com/vi/cNTaFArEObU/0.jpg",
+                  // url: "https://youtu.be/cNTaFArEObU",
+                   //duration: 279,
                 }
             })
             handleCloseDialog();

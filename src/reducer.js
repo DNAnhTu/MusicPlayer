@@ -6,7 +6,7 @@ export const SET_SONG = "SET_SONG"
 
 export const SongContext = createContext({
     song:{
-      id:"d9443a71-16ab-4a7e-aff7-1a226ddeb47b",
+        id: "d9443a71-16ab-4a7e-aff7-1a226ddeb47b",
       title: "Pariah",
       artist: "Steven Wilson, Ninet Tayeb",
       thumbnail : "https://img.youtube.com/vi/cNTaFArEObU/0.jpg",

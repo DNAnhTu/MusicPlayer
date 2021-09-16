@@ -23,7 +23,6 @@ function App() {
         spacing={3}
         style={{
           paddingTop: 80,
-          // background: "linear-gradient(to right, #0f2027, #203a43, #2c5364)"
         }}
       >
         <Grid item xs={12} md={7}>
