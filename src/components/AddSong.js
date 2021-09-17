@@ -29,8 +29,8 @@ const DEFAULT_SONG = {
     artist:"",
     duration:0,
     thumbnail:"",
-   title:"",
-    url:"" 
+    title:"",
+    url:"" ,
     //id:"d9443a71-16ab-4a7e-aff7-1a226ddeb47b",
     //title: "Pariah",
     //artist: "Steven Wilson, Ninet Tayeb",

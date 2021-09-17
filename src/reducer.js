@@ -6,15 +6,16 @@ export const SET_SONG = "SET_SONG"
 
 export const SongContext = createContext({
     song:{
-        id: "d9443a71-16ab-4a7e-aff7-1a226ddeb47b",
-      title: "Pariah",
-      artist: "Steven Wilson, Ninet Tayeb",
-      thumbnail : "https://img.youtube.com/vi/cNTaFArEObU/0.jpg",
-      url: "https://youtu.be/cNTaFArEObU",
-      duration: 279,
+    id: "b277826c-b73b-40ba-bb0f-3d0eea9f4e3a",
+    title: "Alesso - Take My Breath Away (Lyric Video)",
+    artist: "Alesso",
+    thumbnail : "http://img.youtube.com/vi/o10EV4PG40U/0.jpg",
+    url: "https://youtu.be/o10EV4PG40U",
+    duration: 191,
     },
     isPlaying: false
   });
+
 
 function SongReducer(state, action){
     switch(action.type){
