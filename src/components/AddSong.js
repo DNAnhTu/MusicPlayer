@@ -31,12 +31,6 @@ const DEFAULT_SONG = {
     thumbnail:"",
     title:"",
     url:"" ,
-    //id:"d9443a71-16ab-4a7e-aff7-1a226ddeb47b",
-    //title: "Pariah",
-    //artist: "Steven Wilson, Ninet Tayeb",
-    //thumbnail : "https://img.youtube.com/vi/cNTaFArEObU/0.jpg",
-    //url: "https://youtu.be/cNTaFArEObU",
-    //duration: 279,
 }
 
 
@@ -70,18 +64,12 @@ function AddSong(){
         const duration = player.getDuration();
         const {title, video_id, author} = player.getVideoData();
         const thumbnail = `http://img.youtube.com/vi/${video_id}/0.jpg`;
-       // const thumbnail = `https://img.youtube.com/vi/cNTaFArEObU/0.jpg`;
         return {
             artist: 
             author,
             duration,            
             thumbnail,
-            title
-            //title: "Pariah",
-            //artist: "Steven Wilson, Ninet Tayeb",
-           // thumbnail : "https://img.youtube.com/vi/cNTaFArEObU/0.jpg",
-            //url: "https://youtu.be/cNTaFArEObU",
-           // duration: 279,
+            title,
         }
     }
 
@@ -96,11 +84,6 @@ function AddSong(){
                     thumbnail: thumbnail.length > 0 ? thumbnail:null,
                     title: title.length > 0 ? title: null,
                     url: url.length > 0 ? url : null,
-                   //title: "Pariah",
-                  // artist: "Steven Wilson, Ninet Tayeb",
-                   //thumbnail : "https://img.youtube.com/vi/cNTaFArEObU/0.jpg",
-                  // url: "https://youtu.be/cNTaFArEObU",
-                   //duration: 279,
                 }
             })
             handleCloseDialog();
@@ -134,7 +117,6 @@ function AddSong(){
                       boxShadow: "none"
                     },
                   }}
-                // style={{backgroundColor:'transparent'}}
                 open={dialog}
             >
                 <DialogTitle>Edit Song</DialogTitle>

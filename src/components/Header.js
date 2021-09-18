@@ -12,7 +12,6 @@ const useStyles = makeStyles(theme=>({
         objectFit: 'contain'
     },
     info:{
-        // marginRight:50
         display:'flex',
         position:'absolute',
         right:40
