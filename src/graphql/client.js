@@ -34,10 +34,15 @@ const typeDefs = gql`
 
 const client = new ApolloClient({
     link: new WebSocketLink({
-      uri: 'wss://react-music-player-argon.herokuapp.com/v1/graphql',
-      options: {
-        reconnect: true
-      }
+        uri: 'wss://lenient-seahorse-66.hasura.app/v1/graphql',
+        options: {
+            reconnect: true,
+            connectionParams: {
+                headers: {
+                    'x-hasura-access-key': '1ve1er4U7CzpBiarMdhe2bRGacaBsFyAboPB37ZEO4dopLJLys5Pvz5z3H4ucYJw'
+                }
+            }
+        }
     }),
     cache: new InMemoryCache(),
     typeDefs,
