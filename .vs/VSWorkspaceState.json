@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\graphql"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\src\\graphql\\client.js",
   "PreviewInSolutionExplorer": false
 }
